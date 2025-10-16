@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belize Districts Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f8fa;
+  }
+  img {
+    width: 300px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0096c7;
+  }
+</style>
+</head>
+<body>
+
+<h2>Belize Districts Game</h2>
+<p>Made by Fredrick Robinson</p>
+
+<p>Click a district name to highlight it on the map:</p>
+
+<img id="myImage" src="BelizeBlank.png" alt="Belize District Map">
+
+<br>
+
+<button onclick="changeDistrict('Belize.png')">Belize</button>
+<button onclick="changeDistrict('Cayo.png')">Cayo</button>
+<button onclick="changeDistrict('Corozal.png')">Corozal</button>
+<button onclick="changeDistrict('OrangeWalk.png')">Orange Walk</button>
+<button onclick="changeDistrict('Stanncreek.png')">Stann Creek</button>
+<button onclick="changeDistrict('Toledo.png')">Toledo</button>
+<br><br>
+<button onclick="changeDistrict('BelizeBlank.png')">Reset Map</button>
+
+<script>
+function changeDistrict(imageName) {
+  document.getElementById('myImage').src = imageName;
+}
+</script>
+
+</body>
+</html>
